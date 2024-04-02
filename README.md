@@ -175,7 +175,6 @@ Create a directory "../VOC2012/" for storing the dataset and appropriately place
 ```
 
 # Preprocessing
-
 ### 1. Training the USS method
 Please download the trained CAUSE weights from scratch on other datasets [CAUSE weights](https://drive.google.com/file/d/1A8qDMeiF6i_8gNI6At5R5NSS21i93rUi/view?usp=sharing).
 We follow the official [CAUSE](https://github.com/byungkwanlee/causal-unsupervised-segmentation) to train CAUSE from scratch on five datasets.
@@ -185,7 +184,9 @@ Please download and prepare WSS masks [WSS labels](https://drive.google.com/file
 You can replace existing WSS methods with other WSS methods following the current structure.
 
 # Training
-Extract USS feature maps using the frozen USS checkpoint.
+Our code is coming soon.
+
+<!-- Extract USS feature maps using the frozen USS checkpoint.
 ```bash
 python3 produce_uss_features.py --gpus 0 --root ../ --data VOC2012 --domain train_aug --uss CAUSE
 ```
@@ -195,7 +196,7 @@ Train our DHR with WSS labels and USS features.
 python3 train.py --gpus 0 --root ../ --dataset VOC2012 --train_domain train_aug --valid_domain validation \
 --backbone resnet101 --decoder deeplabv3+ --wss MARS --uss CAUSE --tau 0.8 \
 --tag "ResNet-101@VOC2012@DeepLabv3+@DHR"
-```
+``` -->
 
 # Evaluation
 Release our checkpoint and official VOC results (anonymous links).

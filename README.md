@@ -12,6 +12,7 @@ This repository is the official implementation of "DHR: Dual Features-Driven Hie
 
 # Update
 [07/02/2024] Our DHR has been accepted to ECCV 2024. 🔥🔥🔥
+
 [04/02/2024] Released initial commits.
 
 ### Citation

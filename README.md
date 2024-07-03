@@ -11,18 +11,17 @@ This repository is the official implementation of "DHR: Dual Features-Driven Hie
 [arXiv](https://arxiv.org/abs/2404.00380)
 
 # Update
+[07/02/2024] Our DHR has been accepted to ECCV 2024. 🔥🔥🔥
 [04/02/2024] Released initial commits.
 
 ### Citation
 Please cite our paper if the code is helpful to your research.
 ```
-@misc{jo2024dhr,
+@inproceedings{jo2024dhr,
       title={DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation}, 
       author={Sanghyun Jo and Fei Pan and In-Jae Yu and Kyungsu Kim},
-      year={2024},
-      eprint={2404.00380},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      booktitle={European Conference on Computer Vision (ECCV)},
+      year={2024}
 }
 ```
 

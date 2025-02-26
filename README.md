@@ -174,6 +174,13 @@ Create a directory "../VOC2012/" for storing the dataset and appropriately place
             └── xml/
 ```
 
+# Our WSS Masks on Five Benchmarks
+We release our final DHR pseudo masks for VOC 2012, COCO 2014, Context, ADE, and Stuff across both train and validation sets. 
+
+You can download them from the link below:
+
+📌 [[Google Drive]](https://drive.google.com/file/d/199vRNTbHs6TUMO3mky-EBJn5jQFQpUVx/view?usp=sharing)
+
 # Preprocessing
 ### 1. Training the USS method
 Please download the trained CAUSE weights from scratch on other datasets [CAUSE weights](https://drive.google.com/file/d/1A8qDMeiF6i_8gNI6At5R5NSS21i93rUi/view?usp=sharing).

@@ -13,7 +13,7 @@ This repository is the official implementation of "DHR: Dual Features-Driven Hie
 # Update
 [07/25/2026] Released the complete implementation of DHR (preprocessing, training, and evaluation).
 
-| We sincerely apologize for the long delay in releasing the code, which was due to company commitments, and we thank everyone for their patience. We will continue supporting this work so that its ideas can better contribute to the community and to future research.
+> We sincerely apologize for the long delay in releasing the code, which was due to company commitments, and we thank everyone for their patience. We will continue supporting this work so that its ideas can better contribute to the community and to future research.
 
 [07/02/2024] Our DHR has been accepted to ECCV 2024. 🔥🔥🔥
 

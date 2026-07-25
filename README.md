@@ -8,9 +8,13 @@
 # DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation
 This repository is the official implementation of "DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation".
 
-[arXiv](https://arxiv.org/abs/2404.00380)
+[[PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10547.pdf)] [[arXiv](https://arxiv.org/abs/2404.00380)] [[Poster](https://eccv.ecva.net/media/PosterPDFs/ECCV%202024/2631.png?t=1726192568.1728678)]
 
 # Update
+[07/25/2026] Released the complete implementation of DHR (preprocessing, training, and evaluation).
+
+| We sincerely apologize for the long delay in releasing the code, which was due to company commitments, and we thank everyone for their patience. We will continue supporting this work so that its ideas can better contribute to the community and to future research.
+
 [07/02/2024] Our DHR has been accepted to ECCV 2024. 🔥🔥🔥
 
 [04/02/2024] Released initial commits.
@@ -191,19 +195,17 @@ Please download and prepare WSS masks [WSS labels](https://drive.google.com/file
 You can replace existing WSS methods with other WSS methods following the current structure.
 
 # Training
-Our code is coming soon.
-
-<!-- Extract USS feature maps using the frozen USS checkpoint.
+Extract USS feature maps using the frozen USS checkpoint.
 ```bash
 python3 produce_uss_features.py --gpus 0 --root ../ --data VOC2012 --domain train_aug --uss CAUSE
 ```
 
 Train our DHR with WSS labels and USS features.
 ```bash
-python3 train.py --gpus 0 --root ../ --dataset VOC2012 --train_domain train_aug --valid_domain validation \
+python3 train.py --gpus 0 --root ../ --data VOC2012 --train train_aug --valid validation \
 --backbone resnet101 --decoder deeplabv3+ --wss MARS --uss CAUSE --tau 0.8 \
 --tag "ResNet-101@VOC2012@DeepLabv3+@DHR"
-``` -->
+```
 
 # Evaluation
 Release our checkpoint and official VOC results (anonymous links).

@@ -8,7 +8,7 @@
 # DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation
 This repository is the official implementation of "DHR: Dual Features-Driven Hierarchical Rebalancing in Inter- and Intra-Class Regions for Weakly-Supervised Semantic Segmentation".
 
-[[PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10547.pdf)] [[arXiv](https://arxiv.org/abs/2404.00380)] [[Poster](https://eccv.ecva.net/media/PosterPDFs/ECCV%202024/2631.png?t=1726192568.1728678)]
+[[Project Page](https://shjo-april.github.io/DHR/)] [[PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10547.pdf)] [[arXiv](https://arxiv.org/abs/2404.00380)] [[Poster](https://eccv.ecva.net/media/PosterPDFs/ECCV%202024/2631.png?t=1726192568.1728678)]
 
 # Update
 [07/25/2026] Released the complete implementation of DHR (preprocessing, training, and evaluation).

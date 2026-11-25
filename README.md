@@ -10,6 +10,8 @@ This repository is the official implementation of "DHR: Dual Features-Driven Hie
 
 [[Project Page](https://shjo-april.github.io/DHR/)] [[PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10547.pdf)] [[arXiv](https://arxiv.org/abs/2404.00380)] [[Poster](https://eccv.ecva.net/media/PosterPDFs/ECCV%202024/2631.png?t=1726192568.1728678)]
 
+![DHR in four scenes: the vanishing problem of adjacent minor classes, the complementary USS and WSS features, the masks of two training images after each step of DHR, and the results on five benchmarks](./figures/hero.gif)
+
 # Update
 [07/25/2026] Released the complete implementation of DHR (preprocessing, training, and evaluation).
 
@@ -233,3 +235,12 @@ python3 evaluate.py --fix --data VOC2012 --gt ../VOC2012/validation/mask/ \
 python3 evaluate.py --fix --data VOC2012 --gt ../VOC2012/validation/mask/ \
 --tag "DHR (Ours, Mask2Former)" --pred "./submissions_DHR@Mask2Former/validation/results/VOC2012/Segmentation/comp5_val_cls/"
 ```
+
+# Reproduce the hero GIF
+The GIF at the top is composed from figures of the paper: the per-image panels of Fig. 2, Fig. 5, and Fig. 9, the figures Fig. 3 and Fig. 4, and the numbers of Table 2, Table 4, and Table 6. Everything it needs is in `hero_gif/` (panels, logos, and `scenes.py`), so it runs on a CPU without a model or a dataset.
+```bash
+# write figures/hero.gif (Pillow 8.2 or later, NumPy)
+python3 hero_gif/build_gif.py
+```
+- The third scene shows the masks of two MS COCO 2014 training images after each step of DHR; the first image is the one in Fig. 5 of the paper. The mIoU values next to the steps are measured on the whole COCO training set (Table 6), not on these two images.
+- The committed GIF was rendered on Windows with Segoe UI. On other systems the script falls back to the DejaVu Sans bundled with matplotlib.
